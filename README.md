@@ -83,19 +83,22 @@ To get a local copy up and running follow these simple example steps.
     cd backend-go/
    ```
 
-   * npm
-   ```sh
-   npm install 
-   ```
+  * npm
+    ```sh
+    npm install 
+    ```
 
     *Or with yarn*
 
-   * yarn
-   ```sh
-   yarn
-   ```
+  * yarn
+     ```sh
+    yarn
+     ```
+  
+  <br>
 
-   ```sh
+  * docker
+    ```sh
     # for the first time or every time do you change the compose.yml file do you need run this command, wait build the image and volume stop the terminal/cmd with ctrl+c command
     docker compose up 
 
@@ -109,35 +112,43 @@ To get a local copy up and running follow these simple example steps.
 
     # command stop de container if you needed
     docker compose stop
-   ```
+    ```
+
+    <br>
+    
+   * postgres 
    ![image](/public/images/postgres_connection.png)
 
-   ```sh
-    # commands go 
-    # url of your project on github is the most usable
-    # url example: https://github.com/rike14/go_react
-    go mod init url_of_your_project
+  <br>
 
-    # run go mod tidy to install dependencies 
-    go mod tidy
+   * Go
 
-    # to create migrations if you want create a new table, then tern create a file inside ./internal/store/pgstore/migrations with the name do you put, then do you need config the table with drop, create, columns.
-    # see the example on file ./internal/store/pgstore/migrations/001_create_rooms_table.sql
-    tern new --migrations ./internal/store/pgstore/migrations create_name_do_you_want_table
+      ```sh
+      # commands go 
+      # url of your project on github is the most usable
+      # url example: https://github.com/rike14/go_react
+      go mod init url_of_your_project
 
-    # command to run your migrations
-    go run cmd/tools/terndotenv/main.go
+      # run go mod tidy to install dependencies 
+      go mod tidy
 
-    # command to generate your queries like GetRoom, CreateRoom, GetMessages
-    sqlc generate -f ./internal/store/pgstore/sqlc.yaml
-    # or if do you have file like gen.go do you can run the command below to run every queries do you have on the backend
-    go generate ./ ...
+      # to create migrations if you want create a new table, then tern create a file inside ./internal/store/pgstore/migrations with the name do you put, then do you need config the table with drop, create, columns.
+      # see the example on file ./internal/store/pgstore/migrations/001_create_rooms_table.sql
+      tern new --migrations ./internal/store/pgstore/migrations create_name_do_you_want_table
 
-    # to run api
-    go run cmd/wsrs/main.go
-    # url: http://localhost:8080/api
-   
-   ```
+      # command to run your migrations
+      go run cmd/tools/terndotenv/main.go
+
+      # command to generate your queries like GetRoom, CreateRoom, GetMessages
+      sqlc generate -f ./internal/store/pgstore/sqlc.yaml
+      # or if do you have file like gen.go do you can run the command below to run every queries do you have on the backend
+      go generate ./ ...
+
+      # to run api
+      go run cmd/wsrs/main.go
+      # url: http://localhost:8080/api
+    
+      ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -161,15 +172,16 @@ To get a local copy up and running follow these simple example steps.
    yarn
    ```
 
-   ```sh
-   npm run dev
+  * react
+      ```sh
+      npm run dev
 
-    # or with yarn
+        # or with yarn
 
-    yarn dev
+        yarn dev
 
-    # in the terminal see running on the url http://localhost:5173/
-   ```
+        # in the terminal see running on the url http://localhost:5173/
+      ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
