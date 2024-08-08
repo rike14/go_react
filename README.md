@@ -30,6 +30,7 @@
 * [![Go][Go]][Go-url]
 * [![Node][Node]][Node-url]
 * [![React][React]][React-url]
+* [![Typescript][Typescript]][Typescript-url]
 * [![Vite][Vite]][Vite-url]
 * [![Tailwind][Tailwind]][Tailwind-url]
 * [![Postgres][Postgres]][Postgres-url]
@@ -217,6 +218,8 @@ Made with ❤️ by Henrique M. Kronhardt 👋🏽 [Get in touch!](https://www.l
 [Node-url]: https://nodejs.org/pt
 [React]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
+[Typescript]: https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white
+[Typescript-url]: https://www.typescriptlang.org/
 [Vite]: https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white
 [Vite-url]: https://vitejs.dev/
 [Tailwind]: https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white
