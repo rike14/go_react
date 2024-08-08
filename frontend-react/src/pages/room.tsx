@@ -19,7 +19,7 @@ export function Room() {
     } else {
       navigator.clipboard.writeText(url)
 
-      toast.info('O link da sala foi copiado para área de transferência!')
+      toast.info('The Room link copied to clipboard!')
     }
   }
 

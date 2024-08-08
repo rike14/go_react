@@ -20,7 +20,7 @@ export function CreateRoom() {
 
       navigate(`/room/${roomId}`)
     } catch {
-      toast.error('Falha ao criar sala!')
+      toast.error('Error to create room!')
     }
   }
 

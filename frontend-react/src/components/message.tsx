@@ -33,7 +33,7 @@ export function Message({
     try {
       await createMessageReaction({ messageId, roomId })
     } catch {
-      toast.error('Falha ao reagir mensagem, tente novamente!')
+      toast.error('Error to react the message, try again!')
     }
 
     setHasReacted(true)
@@ -47,7 +47,7 @@ export function Message({
     try {
       await removeMessageReaction({ messageId, roomId })
     } catch {
-      toast.error('Falha ao remover reação, tente novamente!')
+      toast.error('Error to remove the message, try again!')
     }
 
     setHasReacted(false)
