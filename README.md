@@ -176,11 +176,11 @@ To get a local copy up and running follow these simple example steps.
       ```sh
       npm run dev
 
-        # or with yarn
+      # or with yarn
 
-        yarn dev
+      yarn dev
 
-        # in the terminal see running on the url http://localhost:5173/
+       # in the terminal see running on the url http://localhost:5173/
       ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
